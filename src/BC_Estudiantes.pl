@@ -7,6 +7,7 @@ estudiante(1004,nombre([davidson,dave]), calificaciones([10,92,34,87])).
 estudiante(1005,nombre([ellenovitch,ellen]), calificaciones([72,87,82,70])).
 
 %¿Cómo le fue a Alice en la tarea 1?
+tarea1_alice(A1) :- estudiante(_,nombre([_,alice]),calificaciones([A1|_])).
 
 %¿Cómo le fue a Alice en la tarea 2?
 
