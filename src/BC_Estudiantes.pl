@@ -23,3 +23,4 @@ estudiante_con100(Nombre):- estudiante(_,nombre(Nombre),calificaciones(L)),last(
 estudiantes_100(Nombre) :- estudiante(_,nombre(Nombre),calificaciones(L)), member(100,L).
 
 %¿Cuál es la calificación promedio de cada estudiante? (asumir la misma ponderación)
+promedio(Nombre, Promedio) :- estudiante(_,nombre(Nombre), calificaciones([A1,A2,A3,Examen])), Promedio is (A1+A2+A3+Examen)/4.
