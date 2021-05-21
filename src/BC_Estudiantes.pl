@@ -16,8 +16,8 @@ tarea2_alice(A2) :- estudiante(_,nombre([_,alice]),calificaciones([_,A2|_])).
 estudiante1002_examen(Examen) :- estudiante(1002,_,calificaciones([_,_,_,Examen])).
 estudiante1002_examen_2(Examen) :- estudiante(1002,_,calificaciones(L)), last(L,Examen).
 
-
 %¿Quien obtuvo 100 en el extamen?
+estudiante_con100(Nombre):- estudiante(_,nombre(Nombre),calificaciones(L)),last(L,Examen), Examen==100.
 
 %¿Alguien mas obtuvo 100 en algo?
 
