@@ -20,5 +20,6 @@ estudiante1002_examen_2(Examen) :- estudiante(1002,_,calificaciones(L)), last(L,
 estudiante_con100(Nombre):- estudiante(_,nombre(Nombre),calificaciones(L)),last(L,Examen), Examen==100.
 
 %¿Alguien mas obtuvo 100 en algo?
+estudiantes_100(Nombre) :- estudiante(_,nombre(Nombre),calificaciones(L)), member(100,L).
 
 %¿Cuál es la calificación promedio de cada estudiante? (asumir la misma ponderación)
